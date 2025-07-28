@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Agency Partner - Rate Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #3C403D;
+            background: #F8F1E9;
+            min-height: 100vh;
+            padding: 40px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #FFFFFF;
+            padding: 40px;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+        .header h1 {
+            font-size: 2.2em;
+            font-weight: 700;
+            color: #3C403D;
+            margin-bottom: 8px;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            color: #5A6058;
+            font-weight: 400;
+        }
+        
+        .content {
+            padding: 20px 0;
+        }
+        
+        .intro {
+            padding: 20px 0;
+            margin-bottom: 40px;
+        }
+        
+        .intro h2 {
+            font-size: 1.6em;
+            font-weight: 500;
+            color: #3C403D;
+            margin-bottom: 12px;
+        }
+        
+        .intro p {
+            color: #5A6058;
+            font-size: 1em;
+        }
+        
+        .pain-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 16px;
+            margin: 20px 0;
+        }
+        
+        .pain-point {
+            padding: 16px;
+            background: #F8F1E9;
+            color: #5A6058;
+        }
+        
+        .pricing-section {
+            margin: 40px 0;
+        }
+        
+        .pricing-section h2 {
+            font-size: 1.8em;
+            font-weight: 500;
+            color: #3C403D;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+        
+        .pricing-card {
+            background: #FFFFFF;
+        }
+        
+        .card-header {
+            padding: 16px;
+            text-align: center;
+            font-size: 1.4em;
+            font-weight: 500;
+            color: #3C403D;
+        }
+        
+        .card-header p {
+            font-size: 0.95em;
+            color: #5A6058;
+            margin-top: 4px;
+        }
+        
+        .card-body {
+            padding: 16px;
+        }
+        
+        .service-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+        }
+        
+        .service-table th,
+        .service-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #E0E0E0;
+        }
+        
+        .service-table th {
+            font-weight: 500;
+            color: #3C403D;
+            background: #F8F1E9;
+        }
+        
+        .service-table td {
+            font-size: 0.95em;
+            color: #5A6058;
+        }
+        
+        .rate {
+            font-weight: 500;
+            color: #D9746D;
+            font-size: 1.05em;
+        }
+        
+        .benefits {
+            padding: 16px 0;
+            margin: 24px 0;
+        }
+        
+        .benefits h3, .benefits h4 {
+            font-size: 1.3em;
+            font-weight: 500;
+            color: #3C403D;
+            margin-bottom: 12px;
+        }
+        
+        .benefits ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .benefits li {
+            padding: 8px 0;
+            font-size: 0.95em;
+            color: #5A6058;
+        }
+        
+        .cta {
+            text-align: center;
+            padding: 32px 0;
+            margin-top: 40px;
+        }
+        
+        .cta h3 {
+            font-size: 1.6em;
+            font-weight: 500;
+            color: #3C403D;
+            margin-bottom: 12px;
+        }
+        
+        .cta p {
+            color: #5A6058;
+            font-size: 1em;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #D9746D;
+            color: #FFFFFF;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95em;
+            margin-top: 16px;
+        }
+        
+        .highlight {
+            color: #D9746D;
+            font-weight: 500;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 24px;
+            }
+            
+            .container {
+                padding: 24px;
+            }
+            
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .header p {
+                font-size: 1em;
+            }
+            
+            .content {
+                padding: 16px 0;
+            }
+            
+            .intro {
+                padding: 16px 0;
+            }
+            
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta {
+                padding: 24px 0;
+            }
+            
+            .btn {
+                padding: 10px 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.5em;
+            }
+            
+            .intro h2 {
+                font-size: 1.3em;
+            }
+            
+            .pricing-section h2 {
+                font-size: 1.5em;
+            }
+            
+            .pain-points {
+                grid-template-columns: 1fr;
+            }
+            
+            .card-header {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Development Partner Rate Card</h1>
+            <p>Tailored Solutions for Marketing Agencies</p>
+        </div>
+        
+        <div class="content">
+            <div class="intro">
+                <h2>Solving Your Technical Challenges</h2>
+                <p>We understand the unique challenges marketing agencies face when clients demand technical implementation beyond your core expertise.</p>
+                
+                <div class="pain-points">
+                    <div class="pain-point">
+                        <strong>Losing pitches</strong> to full-service agencies
+                    </div>
+                    <div class="pain-point">
+                        <strong>Client demands</strong> for technical implementation
+                    </div>
+                    <div class="pain-point">
+                        <strong>Frustration</strong> with slow dev partners
+                    </div>
+                    <div class="pain-point">
+                        <strong>Scope creep</strong> and poor ROI from bad websites
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pricing-section">
+                <h2>Transparent Pricing Structure</h2>
+                
+                <div class="pricing-grid">
+                    <div class="pricing-card project-based">
+                        <div class="card-header">
+                            <h3>Project-Based Engagement</h3>
+                            <p>Perfect for specific campaigns & builds</p>
+                        </div>
+                        <div class="card-body">
+                            <table class="service-table">
+                                <thead>
+                                    <tr>
+                                        <th>Service</th>
+                                        <th>Hourly Rate</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <strong>eCommerce Development</strong><br>
+                                            <small>Shopify, WooCommerce, Magento</small>
+                                        </td>
+                                        <td class="rate">$18 - $25/hr</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>UI/UX Design</strong><br>
+                                            <small>Conversion-focused design</small>
+                                        </td>
+                                        <td class="rate">$18 - $25/hr</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Graphic Design</strong><br>
+                                            <small>Marketing assets & branding</small>
+                                        </td>
+                                        <td class="rate">$18 - $25/hr</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Senior Development</strong><br>
+                                            <small>Complex integrations & new tech</small>
+                                        </td>
+                                        <td class="rate">$25 - $30/hr</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <div class="benefits">
+                                <h4>Project Benefits:</h4>
+                                <ul>
+                                    <li>No long-term commitment</li>
+                                    <li>Scale up/down as needed</li>
+                                    <li>Perfect for campaign-specific builds</li>
+                                    <li>Quick turnaround times</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-card dedicated-team">
+                        <div class="card-header">
+                            <h3>Dedicated Team Model</h3>
+                            <p>Full-time resources for ongoing partnership</p>
+                        </div>
+                        <div class="card-body">
+                            <table class="service-table">
+                                <thead>
+                                    <tr>
+                                        <th>Service</th>
+                                        <th>Monthly Rate</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <strong>eCommerce Developer</strong><br>
+                                            <small>Full-time Shopify/eCommerce specialist</small>
+                                        </td>
+                                        <td class="rate">$2,800 - $3,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>UI/UX Designer</strong><br>
+                                            <small>Dedicated design resource</small>
+                                        </td>
+                                        <td class="rate">$2,800 - $3,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Graphic Designer</strong><br>
+                                            <small>Full-time creative support</small>
+                                        </td>
+                                        <td class="rate">$2,800 - $3,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <div class="benefits">
+                                <h4>Dedicated Team Benefits:</h4>
+                                <ul>
+                                    <li><span class="highlight">40% cost savings</span> vs hourly</li>
+                                    <li>Full-time focus on your projects</li>
+                                    <li>Deep understanding of your clients</li>
+                                    <li>Seamless white-label integration</li>
+                                    <li>Priority support & faster delivery</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="benefits">
+                <h3>Why Marketing Agencies Choose Us:</h3>
+                <ul>
+                    <li><strong>10+ years</strong> working with agencies across Australia, Europe, and the US</li>
+                    <li><strong>White-label ready</strong> - we work behind the scenes</li>
+                    <li><strong>Marketing-funnel focused</strong> - we understand ROAS and conversion optimization</li>
+                    <li><strong>Reliable delivery</strong> - no more scope creep or missed deadlines</li>
+                    <li><strong>Technical expertise</strong> you can trust and explain to clients</li>
+                    <li><strong>Scalable solutions</strong> that grow with your agency</li>
+                </ul>
+            </div>
+            
+            <div class="cta">
+                <h3>Ready to Strengthen Your Technical Capabilities?</h3>
+                <p>Let's discuss how we can support your next client project</p>
+                <a href="https://outlook.office.com/bookwithme/user/a01b2adf70234e8f9e064c3b94639ce0@arrowhitech.com?anonymous&ismsaljsauthenabled&ep=plink" class="btn">Schedule a 15-Minute Call</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
