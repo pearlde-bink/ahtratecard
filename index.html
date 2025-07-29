@@ -104,6 +104,8 @@
         
         .pricing-card {
             background: #FFFFFF;
+            display: flex;
+            flex-direction: column;
         }
         
         .card-header {
@@ -121,6 +123,10 @@
         }
         
         .card-body {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: space-between;
             padding: 16px;
         }
         
@@ -144,7 +150,7 @@
         }
         
         .service-table td {
-            font-size: 0.95em;
+            font-size: 0.8em;
             color: #5A6058;
         }
         
@@ -269,6 +275,11 @@
             font-weight: 400;
         }
         
+        .footer-links .gmail:hover{
+            color: #D9746D;
+            text-decoration: underline;
+        }
+
         .footer-links li a:hover {
             color: #D9746D;
         }
@@ -580,13 +591,13 @@
                 <div class="links">
                     <ul class="footer-links">
                         <li>
+                            <a style="color: #c9655d; font-size: 1em; font-weight: 600; " class="text-regular medium gmail" href="mailto:info@arrowhitech.com" target="">info@arrowhitech.com</a>
+                        </li>
+                        <li>
                             <a class="text-regular medium" href="#" target="">Terms of Services</a>
                         </li>
                         <li>
                             <a class="text-regular medium" href="#" target="">Privacy Policy</a>
-                        </li>
-                        <li>
-                            <a class="text-regular medium" href="https://www.arrowhitech.com/sitemap_index.xml" target="">Sitemap</a>
                         </li>
                     </ul>
                 </div>
