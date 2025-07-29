@@ -192,11 +192,29 @@
             margin-bottom: 16px;
         }
         
-        .cta-section p {
+        .cta-block {
+            margin-bottom: 24px;
+        }
+        
+        .cta-block h4 {
+            font-size: 1.4em;
+            font-weight: 500;
+            color: #3C403D;
+            margin-bottom: 8px;
+        }
+        
+        .cta-block p {
             color: #5A6058;
             font-size: 1em;
             max-width: 600px;
-            margin: 0 auto 16px;
+            margin: 0 auto;
+        }
+        
+        .cta-divider {
+            width: 80px;
+            height: 1px;
+            background: #A8B5A2;
+            margin: 24px auto;
         }
         
         .cta-section .btn {
@@ -208,6 +226,7 @@
             font-weight: 500;
             font-size: 1.1em;
             margin-top: 16px;
+            border-radius: 12px;
         }
         
         .highlight {
@@ -309,7 +328,7 @@
             .cta-section .btn {
                 padding: 12px 24px;
             }
-            
+
             .footer--bottom-wrapper {
                 flex-direction: column;
                 gap: 16px;
@@ -339,6 +358,10 @@
             
             .cta-section h3 {
                 font-size: 1.5em;
+            }
+            
+            .cta-block h4 {
+                font-size: 1.2em;
             }
             
             .footer-socials li a img {
@@ -513,11 +536,17 @@
                 </ul>
             </div>
             
-            <div class="cta-section">
+             <div class="cta-section">
                 <h3>Custom Solutions for Your Success</h3>
-                <p>Need a <span class="highlight">tailored rate card</span> based on your project's unique breakdown? Our team crafts precise pricing plans to fit your needs.</p>
-                <p>Discover our <span class="highlight">AI agent solutions</span> to supercharge your <span class="highlight">CRM</span>, <span class="highlight">ERP</span>, and operational workflows, delivering smarter results for your clients.</p>
-                <p>Ready to optimize your projects? Schedule a free consultation today.</p>
+                <div class="cta-block">
+                    <h4>Tailored Rate Card</h4>
+                    <p>Need a <span class="highlight">tailored rate card</span> based on your project's unique breakdown? Our team crafts precise pricing plans to fit your needs.</p>
+                </div>
+                <div class="cta-divider"></div>
+                <div class="cta-block">
+                    <h4>AI Agent Solutions</h4>
+                    <p>Discover our <span class="highlight">AI agent solutions</span> to supercharge your <span class="highlight">CRM</span>, <span class="highlight">ERP</span>, and operational workflows, delivering smarter results for your clients.</p>
+                </div>
                 <a href="https://outlook.office.com/bookwithme/user/a01b2adf70234e8f9e064c3b94639ce0@arrowhitech.com?anonymous&ismsaljsauthenabled&ep=plink" class="btn">Schedule a Free Consultation</a>
             </div>
         </div>
